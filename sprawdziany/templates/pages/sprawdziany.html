@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPRAWDZIANY</title>
+</head>
+<body>
+{% for sprawdzian in sprawdziany %}
+    <b>Klasa: </b> {{ sprawdzian.klasa }} <br>
+    <b>Dział: </b>{{ sprawdzian.title }} <br>
+    <b>Pytania: </b>{{ sprawdzian.text }}
+{% endfor %}
+</body>
+</html>

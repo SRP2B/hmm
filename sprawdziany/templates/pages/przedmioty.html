@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>przedmioty</title>
+</head>
+<body>
+
+    <ul>
+        {% for przedmiot in przedmioty %}
+            <li><a href="{% url 'nauczyciele_przedmiot' pk=przedmiot.id %}">{{ przedmiot.title }}</a> </li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>

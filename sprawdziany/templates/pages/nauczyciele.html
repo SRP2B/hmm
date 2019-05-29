@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nauczyciele</title>
+</head>
+<body>
+<ul>
+{% for nauczyciel in nauczyciele %}
+<li><a href="{% url 'nauczyciel_sprawdzian' kp=nauczyciel.id %} ">{{ nauczyciel.imie }} {{ nauczyciel.nazwisko }}</a></li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
